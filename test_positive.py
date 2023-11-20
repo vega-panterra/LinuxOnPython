@@ -1,5 +1,4 @@
 import subprocess
-import zlib
 
 tst = '/home/user/tst'
 out = '/home/user/out'
