@@ -62,8 +62,8 @@ def test_step6():
 def test_step7():
     # test7
     result1 = checkout(f'7z h {out}/arx2.7z', 'Everything is Ok')
-    result2 = stdout(f'crc32 {out}/arx2.7z').upper()
-    result3 = checkout(f'7z h {out}/arx2.7z', result2)
+    hash_crc32 = stdout(f'crc32 {out}/arx2.7z').upper()
+    result3 = checkout(f'7z h {out}/arx2.7z', hash_crc32)
     assert result1 and result3, 'test7 FAIL'
 
 
