@@ -1,60 +1,300 @@
-time: 00:00:00 count: 7 size: 1M load: 2.67 1.99 1.50 1/599 82405
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 3/599 82418
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/599 82445
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/599 82452
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/599 82459
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/599 82468
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 5/599 82473
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 2/599 82478
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/598 82487
-
-time: 00:00:00 count: 7 size: 1M load: 2.78 2.02 1.51 1/598 82492
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.60 2.18 1.62 1/595 82538
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.60 2.18 1.62 2/595 82551
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 9/595 82578
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 4/595 82585
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 5/595 82592
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 10/596 82602
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 8/596 82607
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 6/597 82614
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 6/596 82623
-
-time: 00:00:00 | count: 7 | size: 1M | load: 2.71 2.21 1.63 10/596 82628
-
-time: 14:43:47.030385 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82688
-
-time: 14:43:48.124573 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82701
-
-time: 14:43:49.351891 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82728
-
-time: 14:43:49.426530 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82735
-
-time: 14:43:49.539092 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82742
-
-time: 14:43:49.657409 | count: 7 | size: 1M | load: 2.30 2.14 1.69 4/598 82751
-
-time: 14:43:49.733487 | count: 7 | size: 1M | load: 2.30 2.14 1.69 9/598 82756
-
-time: 14:43:49.873439 | count: 7 | size: 1M | load: 2.30 2.14 1.69 3/598 82761
-
-time: 14:43:50.030368 | count: 7 | size: 1M | load: 2.30 2.14 1.69 1/598 82770
-
-time: 14:43:50.173925 | count: 7 | size: 1M | load: 2.30 2.14 1.69 6/598 82775
-
+test_step1
+время начала: 2023-12-10 15:04:32
+количество = 7, размер = 1M
+загрузка CPU: 7.16 5.15 4.08 9/985 39491
+ 
+OUT: 
+дек 10 15:04:32 userpc systemd[1]: Started Session 624 of User user2.
+дек 10 15:04:32 userpc sshd[39403]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:04:33 userpc systemd-logind[696]: Session 624 logged out. Waiting for processes to exit.
+дек 10 15:04:33 userpc systemd[1]: session-624.scope: Deactivated successfully.
+дек 10 15:04:33 userpc systemd-logind[696]: Removed session 624.
+дек 10 15:04:33 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:33 userpc kernel: audit: type=1107 audit(1702209873.153:1292): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:33 userpc sshd[39446]: Accepted password for user2 from 127.0.0.1 port 44820 ssh2
+дек 10 15:04:33 userpc sshd[39446]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:04:33 userpc systemd-logind[696]: New session 625 of user user2.
+дек 10 15:04:33 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:33 userpc systemd[1]: Started Session 625 of User user2.
+дек 10 15:04:33 userpc kernel: audit: type=1107 audit(1702209873.333:1293): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:33 userpc snapd-desktop-i[38914]: Detected new session 625 at /org/freedesktop/login1/session/_3625
+дек 10 15:04:34 userpc sudo[39490]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:04:32'
+дек 10 15:04:34 userpc sudo[39490]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step2
+время начала: 2023-12-10 15:04:43
+количество = 7, размер = 1M
+загрузка CPU: 6.75 5.13 4.08 7/983 39671
+ 
+OUT: 
+дек 10 15:04:43 userpc sshd[39582]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:04:43 userpc systemd[1]: session-628.scope: Deactivated successfully.
+дек 10 15:04:43 userpc systemd-logind[696]: Session 628 logged out. Waiting for processes to exit.
+дек 10 15:04:43 userpc systemd-logind[696]: Removed session 628.
+дек 10 15:04:43 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:43 userpc kernel: audit: type=1107 audit(1702209883.393:1300): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:43 userpc sshd[39626]: Accepted password for user2 from 127.0.0.1 port 38330 ssh2
+дек 10 15:04:43 userpc sshd[39626]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:04:43 userpc systemd-logind[696]: New session 629 of user user2.
+дек 10 15:04:43 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:43 userpc snapd-desktop-i[38914]: Detected new session 629 at /org/freedesktop/login1/session/_3629
+дек 10 15:04:43 userpc kernel: audit: type=1107 audit(1702209883.745:1301): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:04:43 userpc systemd[1]: Started Session 629 of User user2.
+дек 10 15:04:44 userpc sudo[39670]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:04:43'
+дек 10 15:04:44 userpc sudo[39670]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step1
+время начала: 2023-12-10 15:05:20
+количество = 7, размер = 1M
+загрузка CPU: 8.54 5.70 4.31 17/991 40429
+ 
+OUT: 
+дек 10 15:05:20 userpc kernel: audit: type=1107 audit(1702209919.994:1331): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:19 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:20 userpc snapd-desktop-i[38914]: Detected new session 644 at /org/freedesktop/login1/session/_3644
+дек 10 15:05:20 userpc systemd[1]: Started Session 644 of User user2.
+дек 10 15:05:20 userpc sshd[40334]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:20 userpc systemd[1]: session-644.scope: Deactivated successfully.
+дек 10 15:05:20 userpc systemd-logind[696]: Session 644 logged out. Waiting for processes to exit.
+дек 10 15:05:20 userpc systemd-logind[696]: Removed session 644.
+дек 10 15:05:20 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:20 userpc kernel: audit: type=1107 audit(1702209920.866:1332): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:21 userpc sshd[40384]: Accepted password for user2 from 127.0.0.1 port 58246 ssh2
+дек 10 15:05:21 userpc sshd[40384]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:21 userpc systemd-logind[696]: New session 645 of user user2.
+дек 10 15:05:21 userpc kernel: audit: type=1107 audit(1702209921.134:1333): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:21 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:21 userpc snapd-desktop-i[38914]: Detected new session 645 at /org/freedesktop/login1/session/_3645
+дек 10 15:05:21 userpc systemd[1]: Started Session 645 of User user2.
+дек 10 15:05:21 userpc sudo[40428]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:20'
+дек 10 15:05:21 userpc sudo[40428]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step2
+время начала: 2023-12-10 15:05:26
+количество = 7, размер = 1M
+загрузка CPU: 8.01 5.64 4.30 5/990 40565
+ 
+OUT: 
+дек 10 15:05:26 userpc sshd[40476]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:26 userpc systemd-logind[696]: Session 647 logged out. Waiting for processes to exit.
+дек 10 15:05:26 userpc systemd[1]: session-647.scope: Deactivated successfully.
+дек 10 15:05:26 userpc systemd-logind[696]: Removed session 647.
+дек 10 15:05:26 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:26 userpc kernel: audit: type=1107 audit(1702209926.774:1338): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:26 userpc sshd[40520]: Accepted password for user2 from 127.0.0.1 port 52644 ssh2
+дек 10 15:05:26 userpc sshd[40520]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:26 userpc systemd-logind[696]: New session 648 of user user2.
+дек 10 15:05:27 userpc kernel: audit: type=1107 audit(1702209927.002:1339): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:27 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:27 userpc snapd-desktop-i[38914]: Detected new session 648 at /org/freedesktop/login1/session/_3648
+дек 10 15:05:27 userpc systemd[1]: Started Session 648 of User user2.
+дек 10 15:05:28 userpc sudo[40564]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:26'
+дек 10 15:05:28 userpc sudo[40564]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step3
+время начала: 2023-12-10 15:05:31
+количество = 7, размер = 1M
+загрузка CPU: 7.93 5.66 4.31 12/990 40700
+ 
+OUT: 
+дек 10 15:05:31 userpc kernel: audit: type=1107 audit(1702209930.998:1343): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:30 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:31 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:30,928 [52699164]   WARN - #c.i.o.a.i.ActionUpdater - 593 ms to grab EDT for FontEditorPreview$ToggleBoldFontAction#Update@ContextToolbar (com.intellij.application.options.colors.FontEditorPreview$ToggleBoldFontAction)
+дек 10 15:05:30 userpc systemd-logind[696]: New session 650 of user user2.
+дек 10 15:05:31 userpc snapd-desktop-i[38914]: Detected new session 650 at /org/freedesktop/login1/session/_3650
+дек 10 15:05:31 userpc systemd[1]: Started Session 650 of User user2.
+дек 10 15:05:31 userpc sshd[40611]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:31 userpc systemd[1]: session-650.scope: Deactivated successfully.
+дек 10 15:05:31 userpc systemd-logind[696]: Session 650 logged out. Waiting for processes to exit.
+дек 10 15:05:31 userpc systemd-logind[696]: Removed session 650.
+дек 10 15:05:31 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:31 userpc kernel: audit: type=1107 audit(1702209931.826:1344): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:32 userpc sshd[40655]: Accepted password for user2 from 127.0.0.1 port 52672 ssh2
+дек 10 15:05:32 userpc sshd[40655]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:32 userpc systemd-logind[696]: New session 651 of user user2.
+дек 10 15:05:32 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:32 userpc snapd-desktop-i[38914]: Detected new session 651 at /org/freedesktop/login1/session/_3651
+дек 10 15:05:32 userpc kernel: audit: type=1107 audit(1702209932.122:1345): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:32 userpc systemd[1]: Started Session 651 of User user2.
+дек 10 15:05:32 userpc sudo[40698]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:31'
+дек 10 15:05:32 userpc sudo[40698]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step4
+время начала: 2023-12-10 15:05:35
+количество = 7, размер = 1M
+загрузка CPU: 8.74 5.87 4.39 13/989 40834
+ 
+OUT: 
+дек 10 15:05:35 userpc sshd[40745]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:35 userpc systemd[1]: session-653.scope: Deactivated successfully.
+дек 10 15:05:35 userpc systemd-logind[696]: Session 653 logged out. Waiting for processes to exit.
+дек 10 15:05:35 userpc systemd-logind[696]: Removed session 653.
+дек 10 15:05:35 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:35 userpc kernel: audit: type=1107 audit(1702209935.330:1350): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:35 userpc sshd[40789]: Accepted password for user2 from 127.0.0.1 port 52702 ssh2
+дек 10 15:05:35 userpc sshd[40789]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:35 userpc systemd-logind[696]: New session 654 of user user2.
+дек 10 15:05:35 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:35 userpc kernel: audit: type=1107 audit(1702209935.670:1351): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:35 userpc snapd-desktop-i[38914]: Detected new session 654 at /org/freedesktop/login1/session/_3654
+дек 10 15:05:35 userpc systemd[1]: Started Session 654 of User user2.
+дек 10 15:05:36 userpc sudo[40833]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:35'
+дек 10 15:05:36 userpc sudo[40833]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step5
+время начала: 2023-12-10 15:05:40
+количество = 7, размер = 1M
+загрузка CPU: 8.28 5.82 4.38 13/990 41012
+ 
+OUT: 
+дек 10 15:05:40 userpc sshd[40923]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:40 userpc systemd-logind[696]: Session 657 logged out. Waiting for processes to exit.
+дек 10 15:05:40 userpc systemd[1]: session-657.scope: Deactivated successfully.
+дек 10 15:05:40 userpc systemd-logind[696]: Removed session 657.
+дек 10 15:05:40 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:40 userpc kernel: audit: type=1107 audit(1702209940.790:1358): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:41 userpc sshd[40967]: Accepted password for user2 from 127.0.0.1 port 32810 ssh2
+дек 10 15:05:41 userpc sshd[40967]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:41 userpc systemd-logind[696]: New session 658 of user user2.
+дек 10 15:05:41 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:41 userpc kernel: audit: type=1107 audit(1702209941.250:1359): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:41 userpc snapd-desktop-i[38914]: Detected new session 658 at /org/freedesktop/login1/session/_3658
+дек 10 15:05:41 userpc systemd[1]: Started Session 658 of User user2.
+дек 10 15:05:42 userpc sudo[41011]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:40'
+дек 10 15:05:42 userpc sudo[41011]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step6
+время начала: 2023-12-10 15:05:43
+количество = 7, размер = 1M
+загрузка CPU: 8.90 5.99 4.44 11/991 41103
+ 
+OUT: 
+дек 10 15:05:43 userpc sshd[41013]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:44 userpc systemd[1]: session-659.scope: Deactivated successfully.
+дек 10 15:05:44 userpc systemd-logind[696]: Session 659 logged out. Waiting for processes to exit.
+дек 10 15:05:44 userpc systemd-logind[696]: Removed session 659.
+дек 10 15:05:44 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:44 userpc kernel: audit: type=1107 audit(1702209944.054:1362): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:44 userpc sshd[41057]: Accepted password for user2 from 127.0.0.1 port 32816 ssh2
+дек 10 15:05:44 userpc sshd[41057]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:44 userpc systemd-logind[696]: New session 660 of user user2.
+дек 10 15:05:44 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:44 userpc snapd-desktop-i[38914]: Detected new session 660 at /org/freedesktop/login1/session/_3660
+дек 10 15:05:44 userpc kernel: audit: type=1107 audit(1702209944.278:1363): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:44 userpc systemd[1]: Started Session 660 of User user2.
+дек 10 15:05:44 userpc sudo[41101]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:43'
+дек 10 15:05:44 userpc sudo[41101]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step7
+время начала: 2023-12-10 15:05:46
+количество = 7, размер = 1M
+загрузка CPU: 8.90 5.99 4.44 14/990 41199
+ 
+OUT: 
+дек 10 15:05:46 userpc sshd[41105]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:46 userpc systemd[1]: session-661.scope: Deactivated successfully.
+дек 10 15:05:46 userpc systemd-logind[696]: Session 661 logged out. Waiting for processes to exit.
+дек 10 15:05:46 userpc systemd-logind[696]: Removed session 661.
+дек 10 15:05:46 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:46 userpc kernel: audit: type=1107 audit(1702209946.862:1366): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,062 [52715298]   WARN - #c.i.o.a.i.ActionUpdater - 357 ms to grab EDT for ToolWindowHeader$2#Update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,069 [52715305]   WARN - #c.i.o.a.i.ActionUpdater - 363 ms to grab EDT for ToolWindowHeader$2#Update@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,070 [52715306]   WARN - #c.i.o.a.i.ActionUpdater - 361 ms to grab EDT for ToggleAmendCommitModeAction#Update@ChangesView.CommitToolbar (com.intellij.vcs.commit.ToggleAmendCommitModeAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,071 [52715307]   WARN - #c.i.o.a.i.ActionUpdater - 362 ms to grab EDT for ExpandAllAction#Update@ChangesViewToolbar (com.intellij.ide.actions.ExpandAllAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,071 [52715307]   WARN - #c.i.o.a.i.ActionUpdater - 362 ms to grab EDT for CollapseAllAction#Update@ChangesViewToolbar (com.intellij.ide.actions.CollapseAllAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,072 [52715308]   WARN - #c.i.o.a.i.ActionUpdater - 363 ms to grab EDT for ToggleDetailsAction#Update@ChangesViewToolbar (com.intellij.openapi.vcs.changes.ToggleDetailsAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,072 [52715308]   WARN - #c.i.o.a.i.ActionUpdater - 363 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#Update@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,073 [52715309]   WARN - #c.i.o.a.i.ActionUpdater - 363 ms to grab EDT for EditorMarkupModelImpl$1#Update@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$1)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,073 [52715309]   WARN - #c.i.o.a.i.ActionUpdater - 364 ms to grab EDT for HgCommitAndPushExecutorAction#Update@ChangesView.CommitButtonsToolbar (org.zmlx.hg4idea.action.HgCommitAndPushExecutorAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,074 [52715310]   WARN - #c.i.o.a.i.ActionUpdater - 364 ms to grab EDT for GitCommitAndPushExecutorAction#Update@ChangesView.CommitButtonsToolbar (git4idea.actions.GitCommitAndPushExecutorAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,074 [52715310]   WARN - #c.i.o.a.i.ActionUpdater - 365 ms to grab EDT for ShowCommitOptionsAction#Update@ChangesView.ShowCommitOptions (com.intellij.openapi.vcs.actions.ShowCommitOptionsAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,075 [52715311]   WARN - #c.i.o.a.i.ActionUpdater - 365 ms to grab EDT for FakeRerunAction#Update@RunnerToolbar (com.intellij.execution.runners.FakeRerunAction)
+дек 10 15:05:47 userpc sshd[41152]: Accepted password for user2 from 127.0.0.1 port 60148 ssh2
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,137 [52715373]   WARN - #c.i.o.a.i.ActionUpdater - 427 ms to grab EDT for PinToolwindowTabAction#Update@RunnerToolbar (com.intellij.ui.content.tabs.PinToolwindowTabAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,144 [52715380]   WARN - #c.i.o.a.i.ActionUpdater - 427 ms to grab EDT for DumbAwareToggleInvertedBooleanProperty#Update@TestTreeViewToolbar (com.intellij.util.config.DumbAwareToggleInvertedBooleanProperty)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,144 [52715380]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for DumbAwareToggleInvertedBooleanProperty#Update@TestTreeViewToolbar (com.intellij.util.config.DumbAwareToggleInvertedBooleanProperty)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for DumbAwareToggleBooleanProperty#Update@TestTreeViewToolbar (com.intellij.util.config.DumbAwareToggleBooleanProperty)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for ToolbarPanel$SortByDurationAction#Update@TestTreeViewToolbar (com.intellij.execution.testframework.ToolbarPanel$SortByDurationAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for ExpandAllAction#Update@TestTreeViewToolbar (com.intellij.ide.actions.ExpandAllAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for CollapseAllAction#Update@TestTreeViewToolbar (com.intellij.ide.actions.CollapseAllAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for PreviousOccurenceToolbarAction#Update@TestTreeViewToolbar (com.intellij.ide.actions.PreviousOccurenceToolbarAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for NextOccurenceToolbarAction#Update@TestTreeViewToolbar (com.intellij.ide.actions.NextOccurenceToolbarAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for TrackCoverageAction#Update@TestTreeViewToolbar (com.intellij.coverage.actions.TrackCoverageAction)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,145 [52715381]   WARN - #c.i.o.a.i.ActionUpdater - 434 ms to grab EDT for DumbAwareToggleBooleanProperty#Update@TestTreeViewToolbar (com.intellij.util.config.DumbAwareToggleBooleanProperty)
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,137 [52715373]   WARN - #c.i.o.a.i.ActionUpdater - 427 ms to grab EDT for ToggleAutoTestAction#Update@RunnerToolbar (com.intellij.execution.testframework.autotest.ToggleAutoTestAction)
+дек 10 15:05:47 userpc sshd[41152]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:47 userpc systemd-logind[696]: New session 662 of user user2.
+дек 10 15:05:47 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:47 userpc kernel: audit: type=1107 audit(1702209947.170:1367): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:47 userpc snapd-desktop-i[38914]: Detected new session 662 at /org/freedesktop/login1/session/_3662
+дек 10 15:05:47 userpc systemd[1]: Started Session 662 of User user2.
+дек 10 15:05:47 userpc pycharm-community_pycharm-community.desktop[4332]: 2023-12-10 15:05:47,416 [52715652]   WARN - #c.i.o.a.i.ActionUpdater - 4339 ms total to grab EDT 10 times to expand DefaultActionGroup@TestTreeViewToolbar (com.intellij.openapi.actionSystem.DefaultActionGroup). Use `ActionUpdateThread.BGT`.
+дек 10 15:05:48 userpc sudo[41198]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:46'
+дек 10 15:05:48 userpc sudo[41198]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
+test_step8
+время начала: 2023-12-10 15:05:51
+количество = 7, размер = 1M
+загрузка CPU: 10.19 6.30 4.55 7/990 41377
+ 
+OUT: 
+дек 10 15:05:51 userpc sshd[41288]: pam_unix(sshd:session): session closed for user user2
+дек 10 15:05:51 userpc systemd[1]: session-665.scope: Deactivated successfully.
+дек 10 15:05:51 userpc systemd-logind[696]: Session 665 logged out. Waiting for processes to exit.
+дек 10 15:05:51 userpc systemd-logind[696]: Removed session 665.
+дек 10 15:05:51 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:51 userpc kernel: audit: type=1107 audit(1702209951.690:1374): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionRemoved" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:51 userpc sshd[41332]: Accepted password for user2 from 127.0.0.1 port 60184 ssh2
+дек 10 15:05:51 userpc sshd[41332]: pam_unix(sshd:session): session opened for user user2(uid=1001) by (uid=0)
+дек 10 15:05:51 userpc systemd-logind[696]: New session 666 of user user2.
+дек 10 15:05:52 userpc snapd-desktop-i[38914]: Detected new session 666 at /org/freedesktop/login1/session/_3666
+дек 10 15:05:52 userpc kernel: audit: type=1107 audit(1702209952.002:1375): pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                   exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:52 userpc audit[669]: USER_AVC pid=669 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="SessionNew" name=":1.4" mask="receive" pid=2876 label="snap.firefox.firefox" peer_pid=696 peer_label="unconfined"
+                                       exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+дек 10 15:05:52 userpc systemd[1]: Started Session 666 of User user2.
+дек 10 15:05:52 userpc sudo[41376]:    user2 : PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/journalctl --since '2023-12-10 15:05:51'
+дек 10 15:05:52 userpc sudo[41376]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+[sudo] пароль для user2:  
