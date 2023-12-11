@@ -89,4 +89,9 @@ def deploy():
                             f'{data["password"]}',
                             'echo "2222" | sudo -S dpkg -s p7zip-full',
                             'Status: install ok installed'))
+    res.append(ssh_checkout(f'{data["ip"]}',
+                             f'{data["user"]}',
+                             f'{data["password"]}',
+                             'echo "2222" | sudo apt install libarchive-zip-perl',
+                             ''))
     return all(res)
