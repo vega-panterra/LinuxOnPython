@@ -22,7 +22,6 @@ def make_folders():
                         '')
 
 
-# @pytest.fixture(autouse=True, scope='class')
 @pytest.fixture(autouse=True, scope='class')
 def make_files():
     list_of_files = []
@@ -90,9 +89,4 @@ def deploy():
                             f'{data["password"]}',
                             'echo "2222" | sudo -S dpkg -s p7zip-full',
                             'Status: install ok installed'))
-    # res.append(ssh_checkout(f'{data["ip"]}',
-    #                         f'{data["user"]}',
-    #                         f'{data["password"]}',
-    #                         'echo "2222" | sudo apt install libarchive-zip-perl',
-    #                         ''))
     return all(res)
